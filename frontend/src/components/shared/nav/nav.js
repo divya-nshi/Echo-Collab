@@ -48,7 +48,7 @@ const Navbar = ({ auth: { isAuthenticated, user }, logout, history, children }) 
         <section className="bg-[#1f2937]">
             {/*Top Navbar*/}
             <div className="navbar-fixed h-14 flex items-center pl-8 text-2xl font-semibold text-white-light">
-                <Link to="/" className="brand-logo uppercase"><span className="text-orange-500">Project</span> Tracker</Link>
+                <Link to="/" className="brand-logo uppercase"><span className="text-orange-500">Echo</span> Collab</Link>
             </div>
 
             <div className="flex">
@@ -81,7 +81,7 @@ const Navbar = ({ auth: { isAuthenticated, user }, logout, history, children }) 
                             <Link to="/projects" className={currentPath === "/projects" ? activeClass : normalClass}>Projects</Link>
                             <Link to="/resume" className={currentPath === "/resume" ? activeClass : normalClass}>AI Assistant</Link>
                             <Link to="/conferencing" className={currentPath === "/conferencing" ? activeClass : normalClass}>Video Conferencing</Link>
-                            <Link to="/resumeanalyzer" className={currentPath === "/resumeanalyzer" ? activeClass : normalClass}>AI Powered Resume Analyzer</Link>
+                            <Link to="/resumeanalyzer" className={currentPath === "/resumeanalyzer" ? activeClass : normalClass}>AI Resume Analyzer</Link>
                         </>
                     )}
                     {isAuthenticated ? authSidebarLinks : guestSidebarLinks }

@@ -61,6 +61,7 @@ const ProjectsScreen = ({ addProject, getAllProjects, projects }) => {
     );
 
     const addProjectHandler = (event) => {
+        console.log("hello")
         event.preventDefault();
 
         try {
@@ -113,7 +114,7 @@ const ProjectsScreen = ({ addProject, getAllProjects, projects }) => {
                                         <button
                                             className="modal-close waves-effect btn-flat bg-[#1f2937] hover:bg-orange-500 rounded-[4px] font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                             type="button"
-                                            disabled={!formState.isValid}
+                                            disabled={formState.isValid}
                                             onClick={addProjectHandler}
                                         >
                                             Add Project
